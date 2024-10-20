@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #ff6347;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/header {
+    background-color:#0f0e0d;
+    color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+  overflow: hidden;
+  display: inline-block; 
+  position: static;
+  z-index: 1000;
+  margin-right: 20px;
+}
+.logo-text {
+    font-size: 1.2rem;
+    vertical-align: auto;
+    font-family: sans-serif;
+    text-align: end;
+    color: rgb(255, 255, 255);
+    position: absolute; 
+    right: 100px; 
+    top: auto;
+}
+.logo-name {
+    font-size: 1.3rem;
+    vertical-align: auto;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 0;
+}
+
+header nav ul {
+    list-style:  none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+#hero {
+    background-image: url('https://images.rawpixel.com/image_social_landscape/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm01MDgtbTAzLWNvbGxhZ2UtbDBocTZpNGkuanBn.jpg?s=rnx6wyGKtLbni8ve6SlK-XUd9_5bAX4U5wiEoW3HXBU');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    color: black;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+    color: black;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+    color: black;
+}
+
+.hero-content button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e55330;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* Destinations Section */
+#destinations {
+    background-color: #fff;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.destination-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.destination-card p {
+    padding: 0 1rem 1rem;
+}
+
+.destination-card button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.destination-card button:hover {
+    background-color: #e55330;
+}
+
+/* Explore Map Section */
+#explore-map {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #fff;
+}
+
+.blog-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card h3 {
+    margin-bottom: 1rem;
+}
+
+.blog-card button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.blog-card button:hover {
+    background-color: #e55330;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e55330;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#scrolling-tourist-places {
+    padding: 2rem 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.place-card {
+    flex: none;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.place-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.place-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the header stays on top of other content */
+    background-color: #e55330; /* Ensure the background color stays while scrolling */
+    padding: 10px 0; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    width: 100%; /* Ensures the header takes up the full width of the screen */
+}
